@@ -45,6 +45,23 @@ Follow these steps to get started:
    ```bash
    python window.py
    ```
+   - Windows before prediction
+
+       <div>
+       <br>
+          <img src="./src/window.png" width="200" height="250">
+      
+       <div>
+      <br>
+   - Windows after prediction
+      <div>
+         <br>
+         <img src="./src/1-window.png" width="200" height="250">
+         <img src="./src/8-window.png" width="200" height="250">
+         <img src="./src/4-window.png" width="200" height="250">
+         <img src="./src/3-window.png" width="200" height="250">
+      <div>
+      <br>
 
 ## 🎨 Drawing and Predicting Digits
 
