@@ -10,6 +10,10 @@ class Draw:
 
 
     def __init__(self, root):
+
+        self.prediction_label = tk.Label(root, text="Draw a digit and click 'Predict'", font=("Helvetica", 10))
+        self.prediction_label.pack()
+
         self.root = root
         self.root.title("Draw Digit")
 
@@ -18,11 +22,10 @@ class Draw:
         self.canvas = tk.Canvas(root, width=self.canvas_width, height=self.canvas_height, bg='white')
         self.canvas.pack()
 
-        self.button = tk.Button(root, text="Predict", command=self.convert_to_28x28)
+        self.button = tk.Button(root, text="Predict", command=self.convert_to_28x28, bg='#68696B', font=("Helvetica", 12))
         self.button.pack()
 
-        self.prediction_label = tk.Label(root, text="Draw a digit and click 'Predict'", font=("Helvetica", 16))
-        self.prediction_label.pack()
+
 
         self.image = Image.new("RGB", (self.canvas_width, self.canvas_height), (255, 255, 255))
         self.draw = ImageDraw.Draw(self.image)
